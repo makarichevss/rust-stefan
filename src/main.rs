@@ -1,12 +1,13 @@
 // use old::input_output::input_output;
 // use old::print_text::print_text;
-use crate::functions::function;
+// use old::functions::functions;
+use old::strings::string_of_text;
 
-mod functions;
 mod old;
 
 fn main() {
     // input_output();
     // print_text();
-    function();
+    // functions();
+    string_of_text();
 }
