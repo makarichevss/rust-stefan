@@ -1,3 +1,6 @@
+#[allow(unused_variables)]
+#[allow(dead_code)]
+
 pub fn print_text() {
     println!("Hello, world!");
     println!("My name is {} and I'm {} years old.", "Sergey", 36);

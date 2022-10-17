@@ -1,6 +1,7 @@
 use std::io::stdin;
 
-pub fn input_output() {
+#[allow(dead_code)]
+fn input_output() {
     //! # Main function
     //!reads user input from
     //! ```
