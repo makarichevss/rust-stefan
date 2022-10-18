@@ -2,8 +2,16 @@
 #[allow(dead_code)]
 
 pub fn functions() {
-    let name = "Sergey";
-    let age = 3287589;
-    let (a, b, s) = (1, 2, 4);
-    println!("{}", s);
+    let greeting = format!("Hello there");
+    for i in 1..6 {
+        println!("{}", greeting);
+    }
+    let mut name = "Vasya";
+    say_hello(&mut name);
+}
+
+fn say_hello(name: &mut &str) {
+    println!("Hello {}", name);
+    *name = "Sergey";
+    println!("Hello {}", name);
 }
