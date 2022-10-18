@@ -1,3 +1,5 @@
+use crate::Colors2::Name;
+
 mod old;
 
 #[allow(unused_variables)]
@@ -5,29 +7,22 @@ mod old;
 #[allow(dead_code)]
 
 fn main() {
-    let emp = Employee {
-        name: String::from("John"),
-        age: 35
-    };
-    println!("{:#?}", emp);
-    println!("{:#?}", emp.age);
-    println!("{:#?}", emp.details());
-    println!("{:#?}", Employee::static_details());
+    let my_color = Colors::Red;
+    let my_color2 = Name(String::from("Vasya"));
+    println!("{:#?}", my_color2);
 }
 
 #[allow(dead_code)]
 #[derive(Debug)]
-struct Employee {
-    name: String,
-    age: i32
+enum Colors {
+    Red,
+    Green,
+    Blue
 }
 
-impl Employee {
-    fn details(&self) -> String {
-        format!("name: {}, age: {}", &self.name, &self.age)
-    }
-
-    fn static_details() -> String {
-        String::from("Details static")
-    }
+#[allow(dead_code)]
+#[derive(Debug)]
+enum Colors2 {
+    Name(String),
+    Age(i32)
 }
