@@ -1,8 +1,7 @@
-#[allow(unused_variables)]
-#[allow(dead_code)]
-
 const URL: &str = "google.com";
 
+#[allow(unused_variables)]
+#[allow(dead_code)]
 pub fn string_of_text() {
     let name = "Sergey";
     let cat_name: &'static str = "Barsik";
